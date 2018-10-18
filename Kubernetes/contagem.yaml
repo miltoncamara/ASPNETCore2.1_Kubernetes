@@ -22,3 +22,14 @@ spec:
         - containerPort: 80
       imagePullSecrets:
         - name: contagemregistrykey
+kind: Service
+metadata:
+  name: contagem-service
+  labels:
+    version: test
+spec:
+  selector:
+    app: contagem
+  ports:
+  - port: 80
+  type: LoadBalancer
