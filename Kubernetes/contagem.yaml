@@ -22,6 +22,8 @@ spec:
         - containerPort: 80
       imagePullSecrets:
         - name: contagemregistrykey
+--- 
+# https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service 
 kind: Service
 metadata:
   name: contagem-service
