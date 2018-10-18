@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   name: contagem-deployment
 spec:
+  selector: 
+    matchLabels: 
+      app: contagem 
   replicas: 5
   minReadySeconds: 10
   strategy:
