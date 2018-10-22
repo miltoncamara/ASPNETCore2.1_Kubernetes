@@ -23,8 +23,8 @@ namespace APIContagemV2.Controllers
                 {
                     _CONTADOR.ValorAtual,
                     Environment.MachineName,
-                    Sistema = Environment.OSVersion.VersionString
-                    //LocalMeetup = "Microsoft"
+                    Sistema = Environment.OSVersion.VersionString,
+                    LocalMeetup = "Microsoft"
                 };
             }
         }
