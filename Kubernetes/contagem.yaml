@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: contagem
-        image: meetup.azurecr.io/miltoncamara/aspnetcore2.1_kubernetes:#{Build.BuildId}#
+        image: meetup.azurecr.io/miltoncamara/aspnetcore2.1_kubernetes:latest
         ports:
         - containerPort: 80
       imagePullSecrets:
