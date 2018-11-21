@@ -6,7 +6,7 @@ spec:
   selector: 
     matchLabels: 
       app: contagem 
-  replicas: 5
+  replicas: 20
   minReadySeconds: 10
   strategy:
     type: RollingUpdate
