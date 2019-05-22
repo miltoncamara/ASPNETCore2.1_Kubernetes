@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: contagem
-        image: webinar.azurecr.io/miltoncamara/aspnetcore2.1_kubernetes:#{Build.BuildId}#
+        image: miltoncamara/azure-devops-example:#{Build.BuildId}#
         ports:
         - containerPort: 80
       imagePullSecrets:
