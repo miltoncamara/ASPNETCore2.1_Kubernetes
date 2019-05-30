@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: miltoncamaraaspnetcorekubernetes_1 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: miltoncamaraaspnetcorekubernetes_1 
+    spec:
+      containers:
+        - name: miltoncamaraaspnetcorekubernetes_1 
+          image: meetup.azurecr.io/miltoncamaraaspnetcorekubernetes_1 
+          ports:
+          - containerPort: 80
